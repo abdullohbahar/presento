@@ -1,0 +1,40 @@
+body {
+  overflow-x: hidden;
+  font-family: "Hina Mincho", serif;
+  background-color: black;
+}
+
+.color-nav {
+  background-color: black;
+}
+
+.white-font {
+  color: white;
+}
+
+.icon {
+  color: white;
+}
+
+.icon:hover {
+  color: #22b8cf;
+}
+
+.nav-font {
+  font-size: larger;
+}
+
+.nav-font:hover {
+  color: black !important;
+  text-decoration: underline;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black !important;
+  background-color: rgb(190, 187, 187);
+}
+
+h5 {
+  font-weight: bolder;
+}
