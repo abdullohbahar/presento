@@ -1,183 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Data AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css" />
 
     <title>Baharudin A.M | Portfolio</title>
-</head>
+  </head>
 
-<body>
-
-    <ul class="nav nav-pills mb-3 mt-2 justify-content-center nav-justified" id="pills-tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active white-font" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                aria-controls="pills-home" aria-selected="true">
-                <h5>Profile</h5>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link white-font" id="pills-skills-tab" data-toggle="pill" href="#pills-skills" role="tab"
-                aria-controls="pills-profile" aria-selected="false">
-                <h5>What Can I Do</h5>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link white-font" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab"
-                aria-controls="pills-profile" aria-selected="false">
-                <h5>Projects</h5>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link white-font" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                aria-controls="pills-contact" aria-selected="false">
-                <h5><b>Contact Me</b></h5>
-            </a>
-        </li>
+  <body>
+    <ul
+      class="nav nav-pills mb-3 mt-2 justify-content-center nav-justified"
+      id="pills-tab"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link active white-font"
+          id="pills-home-tab"
+          data-toggle="pill"
+          href="#pills-home"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          <h5>Profile</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link white-font"
+          id="pills-skills-tab"
+          data-toggle="pill"
+          href="#pills-skills"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <h5>What Can I Do</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link white-font"
+          id="pills-projects-tab"
+          data-toggle="pill"
+          href="#pills-projects"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <h5>Projects</h5>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link white-font"
+          id="pills-contact-tab"
+          data-toggle="pill"
+          href="#pills-contact"
+          role="tab"
+          aria-controls="pills-contact"
+          aria-selected="false"
+        >
+          <h5><b>Contact Me</b></h5>
+        </a>
+      </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="text-center white-font" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <img src="./assets/img/Koala.png" class="mt-5 w-25">
-                    </div>
-                    <div class="col-12">
-                        <h1 class="mt-3">Who am i?</h1>
-                    </div>
-                    <div class="col-7 mt-2 mb-5">
-                        <h4> Hello, welcome to my website.
-                            Let me introduce my self. My name is Baharudin Abdulloh Mun'im, but you can call me
-                            Bahar.
-                            Now i'm studying at Universitas Bina Sarana Informatika and also working at <a
-                                href="https://sorayalabs.com">Soraya
-                                Labs</a> as a backend junior programmer. And i'm still learning too.
-                        </h4>
-                    </div>
-                </div>
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        <div
+          class="text-center white-font"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <img src="./assets/img/Koala.png" class="mt-5 w-25" />
             </div>
-
-        </div>
-        <div class="tab-pane fade" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab">
-
-        </div>
-        <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-projects-tab">
-            <div class="container">
-                <div class="text-center white-font" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 col-sm-12 col-xs-12 mt-4">
-                            <div class="card card-width">
-                                <img class="card-img-top" src="./assets/img/bg.jpg" alt="Card image cap">
-                                <div class="card-body" style="background-color: black;">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="card card-width">
-                                <img class="card-img-top" src="./assets/img/bg.jpg" alt="Card image cap">
-                                <div class="card-body" style="background-color: black;">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="card card-width">
-                                <img class="card-img-top" src="./assets/img/bg.jpg" alt="Card image cap">
-                                <div class="card-body" style="background-color: black;">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-3">
-                        <div class="col-md-4 mt-4">
-                            <div class="card card-width">
-                                <img class="card-img-top" src="./assets/img/bg.jpg" alt="Card image cap">
-                                <div class="card-body" style="background-color: black;">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="card card-width">
-                                <img class="card-img-top" src="./assets/img/bg.jpg" alt="Card image cap">
-                                <div class="card-body" style="background-color: black;">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12">
+              <h1 class="mt-3">Who am i?</h1>
             </div>
+            <div class="col-7 mt-2 mb-5">
+              <h4>
+                Hello, welcome to my website. Let me introduce my self. My name
+                is Baharudin Abdulloh Mun'im, but you can call me Bahar. Now i'm
+                studying at Universitas Bina Sarana Informatika and also working
+                at <a href="https://sorayalabs.com">Soraya Labs</a> as a backend
+                junior programmer. And i'm still learning too.
+              </h4>
+            </div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-skills"
+        role="tabpanel"
+        aria-labelledby="pills-skills-tab"
+      ></div>
+      <div
+        class="tab-pane fade"
+        id="pills-projects"
+        role="tabpanel"
+        aria-labelledby="pills-projects-tab"
+      >
+        <div class="container">
+          <div
+            class="text-center white-font"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-sm-12 col-xs-12 mt-4">
+                <div class="card card-width">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/bg.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body" style="background-color: black">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-4">
+                <div class="card card-width">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/bg.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body" style="background-color: black">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-4">
+                <div class="card card-width">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/bg.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body" style="background-color: black">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-md-4 mt-4">
+                <div class="card card-width">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/bg.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body" style="background-color: black">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-4">
+                <div class="card card-width">
+                  <img
+                    class="card-img-top"
+                    src="./assets/img/bg.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body" style="background-color: black">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+        ...
+      </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-
-</body>
-
+  </body>
 </html>
