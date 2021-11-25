@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<!--
+**********************************************************************************************************
+    Copyright (c) 
+********************************************************************************************************** -->
+<!-- 
+
+
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <title>Handicraft - Responsive HTML Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- favicon links -->
+    <link rel="icon" type="image/icon" href="favicon.png" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/custom_animation.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="js/plugin/owl/owl.carousel.css" />
+    <link rel="stylesheet" href="js/plugin/range_slider/jquery-ui.css" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/colors/default.css" id="colors" />
+
+    <style>
+      /* Switch starts here */
+      .rocker {
+        display: inline-block;
+        position: relative;
+        /*
+  SIZE OF SWITCH
+  ==============
+  All sizes are in em - therefore
+  changing the font-size here
+  will change the size of the switch.
+  See .rocker-small below as example.
+  */
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: #888;
+        width: 7em;
+        height: 4em;
+        overflow: hidden;
+        border-bottom: 0.5em solid #eee;
+      }
+
+      .rocker-small {
+        font-size: 0.75em; /* Sizes the switch */
+        margin: 1em;
+      }
+
+      .rocker::before {
+        content: "";
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #999;
+        border: 0.5em solid #eee;
+        border-bottom: 0;
+      }
+
+      .rocker input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .switch-left,
+      .switch-right {
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5em;
+        width: 3em;
+        transition: 0.2s;
+      }
+
+      .switch-left {
+        height: 2.4em;
+        width: 2.75em;
+        left: 0.85em;
+        bottom: 0.4em;
+        background-color: #ddd;
+        transform: rotate(15deg) skewX(15deg);
+      }
+
+      .switch-right {
+        right: 0.5em;
+        bottom: 0;
+        background-color: #bd5757;
+        color: #fff;
+      }
+
+      .switch-left::before,
+      .switch-right::before {
+        content: "";
+        position: absolute;
+        width: 0.4em;
+        height: 2.45em;
+        bottom: -0.45em;
+        background-color: #ccc;
+        transform: skewY(-65deg);
+      }
+
+      .switch-left::before {
+        left: -0.4em;
+      }
+
+      .switch-right::before {
+        right: -0.375em;
+        background-color: transparent;
+        transform: skewY(65deg);
+      }
+
+      input:checked + .switch-left {
+        background-color: #0084d0;
+        color: #fff;
+        bottom: 0px;
+        left: 0.5em;
+        height: 2.5em;
+        width: 3em;
+        transform: rotate(0deg) skewX(0deg);
+      }
+
+      input:checked + .switch-left::before {
+        background-color: transparent;
+        width: 3.0833em;
+      }
+
+      input:checked + .switch-left + .switch-right {
+        background-color: #ddd;
+        color: #888;
+        bottom: 0.4em;
+        right: 0.8em;
+        height: 2.4em;
+        width: 2.75em;
+        transform: rotate(-15deg) skewX(-15deg);
+      }
+
+      input:checked + .switch-left + .switch-right::before {
+        background-color: #ccc;
+      }
+
+      /* Keyboard Users */
+      input:focus + .switch-left {
+        color: #333;
+      }
+
+      input:checked:focus + .switch-left {
+        color: #fff;
+      }
+
+      input:focus + .switch-left + .switch-right {
+        color: #fff;
+      }
+
+      input:checked:focus + .switch-left + .switch-right {
+        color: #333;
+      }
+
+      .image_hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--main wrapper start-->
+    <div id="wrapper">
+      <!--top_header start-->
+      <div class="hm_top_info">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <div class="hm_top_login">
+                <ul>
+                  <li>
+                    <a href="javascript:;" class="popup-with-form"
+                      ><i class="fa fa-user" aria-hidden="true"></i> login</a
+                    >
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="popup-signup-form"
+                      ><i class="fa fa-pencil" aria-hidden="true"></i>
+                      register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                      checkout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 pull-right">
+              <div class="top_usd">
+                <div class="hm_top_wishlist">
+                  <p>
+                    <a href="#"
+                      ><i class="fa fa-heart" aria-hidden="true"></i>
+                      Wishlist</a
+                    >
+                  </p>
+                </div>
+                <div class="hm_top_usd">
+                  <p>
+                    <a href="javascript:;"
+                      ><i class="fa fa-angle-down" aria-hidden="true"></i>
+                      usd</a
+                    >
+                  </p>
+                  <ul class="usd_dropmenu">
+                    <li><a href="#">EUR - Euro</a></li>
+                    <li><a href="#">USD - US Dollar</a></li>
+                    <li><a href="#">GBP - British Pound</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Header start-->
+      <div class="hm_header_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6">
+              <div class="hm_logo">
+                <a href="index.html"
+                  ><img src="images/logo.png" alt="" class="img-responsive"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="hm_top_search">
+                <input type="search" name="search" placeholder="Search...." />
+                <span class="search_icon"
+                  ><i class="fa fa-search" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hm_header_overlay"></div>
+      </div>
+      <!--menu start-->
+      <div class="hm_menu_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="hm_menu_wrap">
+                <nav>
+                  <div class="menu_btn">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="hm_menu">
+                    <ul>
+                      <li class="dropdown">
+                        <a href="index.html">home</a>
+                        <ul class="sub-menu">
+                          <li><a href="home-style1.html">home style1</a></li>
+                          <li><a href="home-style2.html">home style2</a></li>
+                          <li><a href="home-style3.html">home style3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">about</a></li>
+                      <li><a href="services.html">services</a></li>
+                      <li class="dropdown">
+                        <a href="javacsript:;">gallery</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="gallery-3-column.html">gallery 3 column</a>
+                          </li>
+                          <li>
+                            <a href="gallery-4-column.html">gallery 4 column</a>
+                          </li>
+                          <li>
+                            <a href="gallery-fullwidth.html"
+                              >gallery full width</a
+                            >
+                          </li>
+                          <li><a href="gallery.html">gallery masonry</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="javascript:;">blog</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="blog-two-column.html">blog two column</a>
+                          </li>
+                          <li>
+                            <a href="blog-three-column.html"
+                              >blog three column</a
+                            >
+                          </li>
+                          <li><a href="blog-single.html">blog single</a></li>
+                        </ul>
+                      </li>
+                      <li class="active dropdown">
+                        <a href="javascript:;">shop</a>
+                        <ul class="sub-menu">
+                          <li><a href="shop.html">shop</a></li>
+                          <li><a href="shop-single.html">shop single</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--banner start-->
+      <div class="hm_bread_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h1>shop single</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">shop single</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--blog section start-->
+      <div class="hm_news_wrapper shop_single">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9">
+              <div class="hm_shop_single">
+                <div class="hm_product_details">
+                  <div class="col-lg-5 col-md-5 padding_left">
+                    <div class="img_box">
+                      <img
+                        src="./images/off.png"
+                        alt=""
+                        class="img-responsive"
+                        id="image_off"
+                      />
+                      <img
+                        src="./images/on.jpg"
+                        alt=""
+                        class="img-responsive image_hidden"
+                        id="image_on"
+                      />
+                    </div>
+                    <label class="rocker rocker-small">
+                      <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox"
+                        onclick="checkbox()"
+                      />
+                      <span class="switch-left">On</span>
+                      <span class="switch-right">Off</span>
+                    </label>
+                  </div>
+                  <div class="col-lg-7 col-md-7">
+                    <div class="hm_product_info">
+                      <h2>hand made jewellery</h2>
+                      <div class="item_price">$ 20.00</div>
+                      <div class="rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <p class="item_text">
+                        But I must explain to you how all this mistaken idea of
+                        denouncing pleasure and praising pain was born and I
+                        will give you a complete account of the system, and
+                        expound the actual teachings of the great explorer of
+                        the truth, the master-builder of human happiness.Neque
+                        porro quisquam est, qui dolorem ipsum quia dolor sit
+                        amet, consectetur, adipisci velit, sed quia non numquam
+                        eius modi tempora incidunt ut labore et dolore magnam
+                        aliquam quaerat voluptatem. Ut enim ad minima veniam.
+                      </p>
+                      <div class="hm_quantity_div">
+                        <div class="quantity-spinner">
+                          <button type="button" class="minus">
+                            <span class="fa fa-minus"></span></button
+                          ><input
+                            type="text"
+                            name="product"
+                            value="2"
+                            class="prod_qty"
+                          /><button type="button" class="plus">
+                            <span class="fa fa-plus"></span>
+                          </button>
+                        </div>
+                      </div>
+                      <button type="button" class="hm_btn add-to-cart">
+                        Add To Cart
+                      </button>
+                      <a href="#" class="add-fav"
+                        ><i class="fa fa-heart-o" aria-hidden="true"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <!--product info tab-->
+                <div class="col-lg-12 col-md-12 padding_left">
+                  <div class="hm_pro_tab">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a href="#description" data-toggle="tab">description</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="description">
+                        <p>
+                          On the other hand, we denounce with righteous
+                          indignation and dislike men who are so beguiled and
+                          demoralized by the charms of pleasure of the moment,
+                          so blinded by desire, that they cannot foresee the
+                          pain and trouble that are bound to ensue; and equal
+                          blame belongs to those who fail in their duty through
+                          weakness of will, which is the same as saying through
+                          shrinking from toil and pain. These cases are
+                          perfectly simple and easy to distinguish.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--related product slider-->
+              </div>
+            </div>
+            <!--sidebar css start-->
+            <div class="col-lg-3 col-md-3">
+              <div class="sidebar">
+                <!--blog categories-->
+                <div class="sidebar-widget widget_categories">
+                  <div class="sidebar-title">
+                    <h2>product categories</h2>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >Funky Jewelry <span class="cat_no">10</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Knitted Hats <span class="cat_no">35</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Homemade Soap <span class="cat_no">40</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Birthday Cards <span class="cat_no">10</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">Tank Tops <span class="cat_no">8</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer start-->
+      <div class="hm_footer_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="hm_footer_box">
+                <img src="images/logo.png" alt="" class="img-responsive" />
+                <p class="footer_about_para">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="hm_footer_box">
+                <h3 class="footer_heading">Help</h3>
+                <ul>
+                  <li><a href="#">Find Your Beer</a></li>
+                  <li><a href="#">Customer Service</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Recent Orders</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="hm_footer_box">
+                <h3 class="footer_heading">links</h3>
+                <ul>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="shop.html">shop</a></li>
+                  <li><a href="404.html">404 page</a></li>
+                  <li><a href="javascript:;">login</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="hm_footer_box hm_footer_contact">
+                <h3 class="footer_heading">Our Information</h3>
+                <ul>
+                  <li>
+                    <span class="footer_icon"
+                      ><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <p class="foo_con_para">
+                      787 Lakeview St. Marion, NC 28752
+                    </p>
+                  </li>
+                  <li>
+                    <span class="footer_icon"
+                      ><i class="fa fa-phone" aria-hidden="true"></i>
+                    </span>
+                    <p class="foo_con_para">+1800123654789 +1800123456788</p>
+                  </li>
+                  <li>
+                    <a href="mailto:jhini.mehta@gmail.com"
+                      ><span class="footer_icon"
+                        ><i class="fa fa-envelope" aria-hidden="true"></i>
+                      </span>
+                      <p class="foo_con_para">support@handmade.net</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--bottom footer start-->
+      <div class="hm_bottom_footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <p>
+                Copyrights &copy; 2018 All Rights Reserved by Himanshusofttech
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <ul class="footer_so_icons">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--popup login form-->
+      <div class="hm_login_form_overlay">
+        <div class="hm_login_form">
+          <div class="hm_login_header">
+            <h1>login form</h1>
+            <span class="login_close"
+              ><i class="fa fa-times" aria-hidden="true"></i
+            ></span>
+          </div>
+          <div class="login_fields">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pass"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form_btn">
+                <a href="#" class="hm_btn"> login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--popup signup form-->
+      <div class="hm_signup_form_overlay">
+        <div class="hm_signup_form">
+          <div class="hm_login_header">
+            <h1>signup form</h1>
+            <span class="login_close"
+              ><i class="fa fa-times" aria-hidden="true"></i
+            ></span>
+          </div>
+          <div class="login_fields">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="uname"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="re-password"
+                  placeholder="Re-type Password"
+                />
+              </div>
+              <div class="form_btn">
+                <a href="#" class="hm_btn"> register now</a>
+                <div class="register_info">
+                  already have an account? <a href="javascript:;">login</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--main wrapper-->
+    </div>
+    <!--script-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script
+      type="text/javascript"
+      src="js/plugin/owl/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugin/range_slider/jquery-ui.js"
+    ></script>
+    <script type="text/javascript" src="js/switcher.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+      function checkbox() {
+        var checkbox = document.querySelector("#checkbox").value;
+        if ($("#checkbox").is(":checked")) {
+          var checked = "on";
+        } else {
+          var checked = "off";
+        }
+
+        if (checked == "on") {
+          //   document.querySelector("#image_on").removeAttribute("hidden", "");
+          //   document.querySelector("#image_off").setAttribute("hidden", "");
+
+          var element_on = document.getElementById("image_on");
+          element_on.classList.remove("image_hidden");
+
+          var element_off = document.getElementById("image_off");
+          element_off.classList.add("image_hidden");
+        } else if (checked == "off") {
+          //   document.querySelector("#image_off").removeAttribute("hidden", "");
+          //   document.querySelector("#image_on").setAttribute("hidden", "");
+
+          var element_off = document.getElementById("image_off");
+          element_off.classList.remove("image_hidden");
+
+          var element_on = document.getElementById("image_on");
+          element_on.classList.add("image_hidden");
+        }
+      }
+    </script>
+  </body>
+</html>
