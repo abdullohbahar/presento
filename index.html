@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/custom_animation.css" />
+    <link rel="stylesheet" href="css/about-toggle.css" />
+    <link rel="stylesheet" href="css/toggle.css" />
     <!--revolution-->
     <link
       href="js/plugin/revolution/css/settings.css"
@@ -766,36 +768,66 @@
       <div class="hm_about_wrapper">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="hm_about_img">
+            <div class="col-lg-6 col-md-6 justify-content-center">
+              <center>
                 <img
-                  src="http://via.placeholder.com/555x378"
-                  alt=""
+                  src="./images/off.png"
+                  id="image_offAbout"
                   class="img-responsive"
+                  style="width: 80%"
                 />
-              </div>
+                <img
+                  src="./images/on.jpg"
+                  id="image_onAbout"
+                  class="img-responsive image_hidden"
+                  style="width: 80%"
+                />
+                <label
+                  class="rocker-about rocker-small-about"
+                  style="margin-top: -5px"
+                >
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkboxAbout"
+                    onclick="checkboxAbout()"
+                  />
+                  <span class="switch-left-about">On</span>
+                  <span class="switch-right-about">Off</span>
+                </label>
+              </center>
             </div>
             <div class="col-lg-6 col-md-6">
-              <div class="hm_about_data">
-                <h1><span class="hm_color">Welcome</span> To Hand Made</h1>
+              <div class="hm_about_data wow fromright">
+                <h1><span class="hm_color">About</span> Us</h1>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover
+                  Bikin Kibin is an artisan home lighting that has been
+                  experienced for more than 20 years in lamp design. Back in
+                  2002, we’re delighted that we built our home and studio in
+                  Bali. It opens up the opportunity to meet clients from across
+                  the world who adore our artisan lamp as much as we do. Bikin
+                  is “ creating ” in Bahasa. As the word implies, Bikin Kibin is
+                  simply our way to express and celebrate our love of creating
+                  arts through our artisan lamp.
                 </p>
                 <p>
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy.
+                  Aside from its functional role, we add a sense of creativity
+                  to each lamp. We feature contemporary fun and the play of
+                  color, it explains why our craft is eye catchy and expressive.
+                  When it belongs to a room, it will decorate both daytime and
+                  nighttime. During daytime, our lamp will add a statement of
+                  timeless charm, and at nighttime, it will project
+                  sophisticated shadow and light, shifting the room into a warm,
+                  intimate and cozy feel.
                 </p>
-                <div class="hm_btn_wrapper">
-                  <a href="#" class="hm_btn">read more</a>
-                </div>
+                <p>
+                  This is more than merely design. Each of our artwork
+                  translates the feeling of things we’ve seen, places we have
+                  traveled, people we’ve met and the life we’ve been through. It
+                  is supposed to evoke emotion and as an invitation to
+                  experience life. It got us started as it keeps us going, that
+                  Bikin Kibin aims to be art for living.
+                </p>
               </div>
             </div>
           </div>
@@ -807,155 +839,180 @@
           <div class="row">
             <div class="col-lg-12 col-md-12">
               <h1 class="hm_heading">
-                <span class="hm_color">Our</span> Products
+                <span class="hm_color">Category Product</span>
               </h1>
             </div>
           </div>
           <div class="row">
             <div class="new_pro_inner">
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Jellied eels.</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$12 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
-                  </div>
-                </div>
-              </div>
-              <!--2-->
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Deep fried pomfret.</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$16 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
-                  </div>
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
+              <a href="#">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="hm_product_details">
+                    <div class="img_box">
+                      <img
+                        src="./images/lamp/DAY/PhotoRoom_20211002_151547.png"
+                        id="image_off1"
+                        class="img-responsive"
+                        style="width: 100%"
+                      />
+                      <img
+                        src="./images/lamp/NIGHT/RHT06834.jpg"
+                        id="image_on1"
+                        class="img-responsive image_hidden"
+                        style="width: 100%"
+                      />
+                    </div>
+                    <div class="new_pro_data">
+                      <center>
+                        <div class="row">
+                          <div class="col-12">
+                            <label
+                              class="rocker rocker-small"
+                              style="margin-top: -18px"
+                            >
+                              <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox1"
+                                onclick="checkbox1()"
+                              />
+                              <span class="switch-left">On</span>
+                              <span class="switch-right">Off</span>
+                            </label>
+                          </div>
+                        </div>
+                        <h3>Hanging Lamp</h3>
+                      </center>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--3-->
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Marinated swordfish</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$12 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
-                  </div>
-                </div>
-              </div>
-              <!--4-->
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Jellied</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$18 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
+              </a>
+              <a href="#">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="hm_product_details">
+                    <div class="img_box">
+                      <img
+                        src="./images/lamp/DAY/PhotoRoom_20210925_185020.png"
+                        id="image_off2"
+                        class="img-responsive"
+                        style="width: 100%"
+                      />
+                      <img
+                        src="./images/lamp/NIGHT/RHT06853.jpg"
+                        id="image_on2"
+                        class="img-responsive image_hidden"
+                        style="width: 100%"
+                      />
+                    </div>
+                    <div class="new_pro_data">
+                      <center>
+                        <div class="row">
+                          <div class="col-12">
+                            <label
+                              class="rocker rocker-small"
+                              style="margin-top: -18px"
+                            >
+                              <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox2"
+                                onclick="checkbox2()"
+                              />
+                              <span class="switch-left">On</span>
+                              <span class="switch-right">Off</span>
+                            </label>
+                          </div>
+                        </div>
+                        <h3>Table Lamp</h3>
+                      </center>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--5-->
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Salmon</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$16 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
-                  </div>
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
-                  </div>
-                </div>
-              </div>
-              <!--6-->
-              <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="new_pro_box">
-                  <div class="new_pro_img">
-                    <img
-                      src="http://via.placeholder.com/360x296"
-                      alt=""
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="new_pro_data">
-                    <h3><a href="shop-single.html">Salmon roe.</a></h3>
-                    <p>
-                      orem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s
-                    </p>
-                    <span class="pro_price">$20 Only</span>
-                    <span class="cart_icon"
-                      ><a href="#"
-                        ><i class="fa fa-cart-plus" aria-hidden="true"></i></a
-                    ></span>
+              </a>
+              <a href="#">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="hm_product_details">
+                    <div class="img_box">
+                      <img
+                        src="./images/lamp/DAY/PhotoRoom_20210925_184910.png"
+                        id="image_off3"
+                        class="img-responsive"
+                        style="width: 100%"
+                      />
+                      <img
+                        src="./images/lamp/NIGHT/RHT06879.jpg"
+                        id="image_on3"
+                        class="img-responsive image_hidden"
+                        style="width: 100%"
+                      />
+                    </div>
+                    <div class="new_pro_data">
+                      <center>
+                        <div class="row">
+                          <div class="col-12">
+                            <label
+                              class="rocker rocker-small"
+                              style="margin-top: -18px"
+                            >
+                              <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox3"
+                                onclick="checkbox3()"
+                              />
+                              <span class="switch-left">On</span>
+                              <span class="switch-right">Off</span>
+                            </label>
+                          </div>
+                        </div>
+                        <h3>Floor Lamp</h3>
+                      </center>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+              <a href="#">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="hm_product_details">
+                    <div class="img_box">
+                      <img
+                        src="./images/lamp/DAY/PhotoRoom_20210925_185253.png"
+                        id="image_off4"
+                        class="img-responsive"
+                        style="width: 100%"
+                      />
+                      <img
+                        src="./images/lamp/NIGHT/RHT06920.jpg"
+                        id="image_on4"
+                        class="img-responsive image_hidden"
+                        style="width: 100%"
+                      />
+                    </div>
+                    <div class="new_pro_data">
+                      <center>
+                        <div class="row">
+                          <div class="col-12">
+                            <label
+                              class="rocker rocker-small"
+                              style="margin-top: -18px"
+                            >
+                              <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox4"
+                                onclick="checkbox4()"
+                              />
+                              <span class="switch-left">On</span>
+                              <span class="switch-right">Off</span>
+                            </label>
+                          </div>
+                        </div>
+                        <h3>Wall Lamp</h3>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1439,90 +1496,6 @@
           </div>
         </div>
       </div>
-      <!--popup login form-->
-      <div class="hm_login_form_overlay">
-        <div class="hm_login_form">
-          <div class="hm_login_header">
-            <h1>login form</h1>
-            <span class="login_close"
-              ><i class="fa fa-times" aria-hidden="true"></i
-            ></span>
-          </div>
-          <div class="login_fields">
-            <form>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="pass"
-                  placeholder="Password"
-                />
-              </div>
-              <div class="form_btn">
-                <a href="#" class="hm_btn"> login</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--popup signup form-->
-      <div class="hm_signup_form_overlay">
-        <div class="hm_signup_form">
-          <div class="hm_login_header">
-            <h1>signup form</h1>
-            <span class="login_close"
-              ><i class="fa fa-times" aria-hidden="true"></i
-            ></span>
-          </div>
-          <div class="login_fields">
-            <form>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="uname"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Password"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="re-password"
-                  placeholder="Re-type Password"
-                />
-              </div>
-              <div class="form_btn">
-                <a href="#" class="hm_btn"> register now</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
       <!--main wrapper-->
     </div>
     <!--script-->
@@ -1566,5 +1539,8 @@
     <!--Revolution slider js-->
     <script type="text/javascript" src="js/switcher.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/about-toggle.js"></script>
+    <script src="js/single-toggle.js"></script>
+    <script src="js/multi-toggle.js"></script>
   </body>
 </html>
