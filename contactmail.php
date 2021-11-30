@@ -39,4 +39,4 @@ if(trim($u_name)!="Your Name" && trim($u_email)!="Your email" && trim($u_phone)!
 else
 {
 echo '2#<p style="color:red">Please, fill all the details.</p>';
-}?>
+}
