@@ -3386,6 +3386,8 @@ ul.hm_pagination li a.next {
   width: 100%;
   float: left;
   overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .hm_product_details .img_box img {
   -webkit-transform: scale(1);
